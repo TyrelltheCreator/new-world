@@ -1,0 +1,204 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #031926; /* Background color */
+    color: #EF8354; /* Default text color */
+}
+
+/* Header Styles */
+header {
+    background: url('Untitled Project - Artboard 1.png') no-repeat center center;
+    background-size: cover;
+    padding: 20px 0;
+    text-align: center;
+    color: rgb(21, 55, 119);
+}
+
+header .logo h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header .logo p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #81D2C7;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #EF8354;
+    color: #031926;
+    border-radius: 5px;
+}
+
+/* Main Content Styles */
+main {
+    padding: 40px 20px;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.cta-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #81D2C7;
+    color: #031926;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #4EFFEF;
+}
+
+/* Game Gallery */
+.game-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.game-item {
+    width: 250px;
+    text-align: center;
+}
+
+.game-item img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.game-item .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    display: none;
+}
+
+.game-item:hover .overlay {
+    display: block;
+}
+
+/* Contact Form Styles */
+form {
+    background-color: #5688C7;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    display: block;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+form button {
+    background-color: #EF8354;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #4EFFEF;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #031926;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 15px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+}
+
+footer ul li a:hover {
+    color: #EF8354;
+}
+
+/* Loading Spinner Styles */
+#loader {
+    text-align: center;
+    font-size: 2em;
+    display: none; /* Hidden by default */
+}
+
+.loading {
+    display: block;
+}
